@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css"
 
-function sports(){
+function Sports(){
     return(
         <div>
             <h1>Sports And Games</h1>
@@ -10,4 +10,4 @@ function sports(){
     );
 }
 
-export default sports;
+export default Sports;

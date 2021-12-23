@@ -1,12 +1,13 @@
 import React from "react";
-import "./index.css"
+//import "./index.css"
 
 function Sports(){
     return(
         <div>
             <h1>Sports And Games</h1>
-        </div>,
-        document.getElementById("root")
+            <p>This is a para</p>
+        </div>
+        // document.getElementById("root")
     );
 }
 

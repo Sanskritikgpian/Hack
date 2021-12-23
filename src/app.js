@@ -1,15 +1,16 @@
 import React from "react";
 import "./index.css"
-
+import "./App.css"
 //import {useHistory } from 'react-router-dom';
 import {
     BrowserRouter as Router,
-    //Redirect,
+    Redirect,
     Switch,
     Route,
   } from "react-router-dom";
   import Sports from "./Sports";
-  import Picture from "./Picture"
+import Picture from "./Picture";
+
 
 function App(){
     // const history = useHistory();
@@ -18,13 +19,19 @@ function App(){
     // }
     return (
         <>
-        <Picture />
+        
+        {/* <h1>This is aryan</h1> */}
         <Router>
         <Switch>
-            <Route path="/sports" exact>
-              <Sports  />
+            
+            <Route path="/Sports" exact>
+                <Sports  />
             </Route>
-            </Switch>
+            <Route path="/" exact>
+                <Picture  />
+            </Route>
+            <Redirect to="/" />   
+        </Switch>
         </Router>
         </>
     );
